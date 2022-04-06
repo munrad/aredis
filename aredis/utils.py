@@ -11,8 +11,6 @@ try:
 except Exception:
     pass
 
-LOOP_DEPRECATED = sys.version_info >= (3, 8)
-
 
 def b(x):
     return x.encode('latin-1') if not isinstance(x, bytes) else x
