@@ -133,8 +133,8 @@ setup(
     keywords=['Redis', 'key-value store', 'asyncio'],
     license='MIT',
     packages=['aredis', 'aredis.commands'],
-    python_requires=">=3.5",
-    extras_require={'hiredis': ['hiredis>=0.2.0']},
+    python_requires=">=3.8",
+    extras_require={'hiredis': ['hiredis>=1.0.2']},
     tests_require=['pytest',
                    'pytest_asyncio>=0.5.0'],
     cmdclass={
@@ -161,6 +161,6 @@ setup(
     # so even if a local contextvars module is installed,
     # the one from the standard library will be used.
     install_requires=[
-        'contextvars;python_version<"3.7"'
+        'contextvars;python_version<"3.8"'
     ]
 )
